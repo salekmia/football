@@ -248,6 +248,153 @@ ul li {
 
 
 
+
+/*----------------------*\
+    Contact Form Design
+\*----------------------*/
+#contact .container {
+    display: grid;
+    place-items: center;
+}
+
+.contact-form {
+    background: #fff;
+    max-width: 600px;
+    padding: 25px 40px 10px 40px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, .25);
+}
+.contact-form .text {
+    font-size: 35px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.contact-form form {
+    padding: 35px 0 0 0;
+}
+
+form .form-row {
+    display: flex;
+    margin: 32px 0;
+}
+
+.form-row .input-data {
+    width: 100%;
+    height: 40px;
+    margin: 0 20px;
+    position: relative;
+}
+
+.form-row .textarea {
+    height: 70px;
+}
+
+.input-data input,
+.textarea textarea {
+    display: block;
+    width: 100%;
+    height: 100%;
+    font-size: 17px;
+    border: none;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.15);
+}
+
+.textarea textarea {
+    resize: none;
+    padding-top: 10px;
+}
+
+.input-data input:focus,
+.textarea textarea:focus {
+    outline: none;
+} 
+
+.input-data input:focus ~ label,
+.textarea textarea:focus ~ label,
+.input-data input:valid ~ label,
+.textarea textarea:valid ~ label {
+    transform: translateY(-20px);
+    outline: none;
+    font-size: 14px;
+    color: #3498db;
+}
+
+.input-data label {
+    position: absolute;
+    font-size: 16px;
+    bottom: 10px;
+    pointer-events: none;
+    transition: all .3s ease;
+}
+
+.textarea label {
+    width: 100%;
+    bottom: 40px;
+    background: #fff;
+}
+
+.input-data .underline {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+}
+
+.input-data .underline::before,
+.input-data .underline::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #3498db;
+    transform: scaleX(0);
+    transform-origin: center;
+    transition: all .3s ease;
+}
+
+.input-data input:focus ~ .underline::before, .underline::after,
+.textarea textarea:focus ~ .underline::before, .underline::after,
+.input-data input:valid ~ .underline::before, .underline::after,
+.textarea textarea:valid ~ .underline::before, .underline::after {
+    transform: scaleX(1);
+}
+
+.submit-btn .input-data {
+    height: 45px;
+    width: 25%;
+    overflow: hidden;
+}
+
+.submit-btn .input-data .inner {
+    height: 100%;
+    width: 300%;
+    position: absolute;
+    left: -100%;
+    background: linear-gradient(to right, #5614B0, #DBD65C);
+    transition: all .3s ease;
+}
+
+.submit-btn .input-data:hover .inner {
+    left: 0;
+}
+
+.submit-btn .form-btn {
+    color: #fff;
+    border: none;
+    position: relative;
+    background: none;
+    z-index: 2;
+    font-size: 17px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+
+
+
+
+
 /*----------------------*\
     Footer Design
 \*----------------------*/
@@ -379,6 +526,20 @@ ul li {
     #copa-america {
         margin-top: 40px;
         margin-bottom: 40px;
+    }
+
+    form .form-row {
+        display: flex;
+        flex-direction: column;
+        margin: 0 0;
+    }
+
+    .form-row .input-data {
+        margin: 32px 0;
+    }
+
+    .submit-btn .input-data {
+        width: 40%;
     }
 
     .footer-logo img {
