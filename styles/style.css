@@ -404,6 +404,12 @@ form .form-row {
     grid-gap: 3px;
 }
 
+#gallary h2 {
+    text-align: center;
+    color: #0A0826;
+    margin-bottom: 20px;
+}
+
 .gallary img {
     height: 100%;
     width: 100%;
@@ -560,6 +566,10 @@ form .form-row {
     #copa-america {
         margin-top: 40px;
         margin-bottom: 40px;
+    }
+
+    #gallary h2 {
+        font-size: 38px;
     }
 
     form .form-row {
