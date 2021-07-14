@@ -247,8 +247,6 @@ ul li {
 
 
 
-
-
 /*----------------------*\
     Contact Form Design
 \*----------------------*/
@@ -393,7 +391,6 @@ form .form-row {
 
 
 
-
 /*----------------------*\
     Gallary Design
 \*----------------------*/
@@ -413,11 +410,9 @@ form .form-row {
 .gallary img {
     height: 100%;
     width: 100%;
+    object-fit: cover;
 }
 
-.normal {
-
-}
 
 .big {
     grid-column: span 2;
@@ -593,7 +588,6 @@ form .form-row {
 }
 
 
-
     /* tablet device */
 @media (min-width: 689px) and (max-width: 992px) {
     .container {
@@ -629,12 +623,7 @@ form .form-row {
         font-size: 40px;
     }
 
-    
-    
-    
 }
-
-
 
 @media (max-width: 1100px) {
     .container {
@@ -644,10 +633,3 @@ form .form-row {
 
 
 
-
-/*----------------------*\
-    Google Fonts
-\*----------------------*/
-/*----------------------*\
-    Google Fonts
-\*----------------------*/
